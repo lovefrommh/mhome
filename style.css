@@ -1,0 +1,1136 @@
+/* Style for desktop - home page */
+body {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0%;
+    overflow-x: hidden;
+    background-image: url(/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cookie-popup {
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background: rgb(136, 239, 33);
+}
+
+    .cookie-popup p{
+        width: fit-content;
+        text-align: center;
+        font-size: 20px;
+}
+
+.cookie-popup button{
+    position: relative;
+    top: -5.9vh;
+    left: 59vh;
+    font-size: 20px;
+}
+
+
+
+.header{
+ display: flexbox;
+ background-color: #272827;
+ position: fixed;
+ z-index: 99;
+}
+
+.container{
+    display: inline-flex;
+    flex-flow: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img{
+    height: 13vh;
+}
+
+.container h4{
+    position: relative;
+    margin: 0 27vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffff00;
+   right: 27vw;
+}
+
+.vl {
+    border-left: 9px solid green;
+    height: 9vh;
+    z-index: 1;
+    position: absolute;
+    left:19vw;
+  }
+
+.container a{
+    font-size: 4vh;
+    text-decoration: none;
+    color: #fdfd1e;
+}
+
+.container nav{
+    display: flexbox;
+    position: relative;
+    left: -9vw;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.container li{
+    margin: 0 1.2vw 0 0 ;
+    list-style: none;
+}
+
+.container li a{
+    font-size: 1.2vw;
+}
+
+.intro{
+    position: relative;
+    top: 12vh;
+}
+
+.intro img{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    z-index:2;
+    opacity: 9;
+    top: 18vh;
+    left:67vh;
+}
+
+.line{
+    position: absolute;
+   height: 10px;
+   width: 250px;
+   z-index: 2;
+   background-color: #ffff00;
+   top: 58vh;
+   left: 39vw;
+}
+#mobile{
+    display: none;
+}
+
+.intro video{
+     max-width:100%;
+    opacity: 0.4;
+    display: inline-block;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.intro p{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 58vh;
+    left:65vh;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    color: #298706;
+}
+
+.introx{
+    top: 12vh;
+    margin: 0;
+    position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.introx.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.introx img{
+    margin: 0;
+    max-width: 100%;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+.introx h3{
+    position: absolute;
+    top:1vh;
+    left: 40vw;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.introx p{
+    position: absolute;
+    top:12vh;
+    left: 40vh;
+    right:40vh;
+    font-size: 3vh;
+}
+
+.details{
+    position: absolute;
+    top: 78vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .details.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.details div{
+    margin: 0 6%;
+}
+
+.carousel { 
+    position: relative; 
+    height: 550px;
+    width: 50%;
+    overflow: hidden; 
+    
+} 
+
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+    top: 0; 
+    left: 100%; 
+    overflow: hidden;
+} 
+  
+.carousel-item.active { 
+    left: 0; 
+    transition: all 1.3s ease-in-out; 
+} 
+  
+.carousel-item div { 
+    height: 100%; 
+} 
+  
+.red { 
+    background-color: red; 
+} 
+  
+.green { 
+    background-color: green; 
+} 
+  
+.yellow { 
+    background-color: yellow; 
+} 
+  
+.violet { 
+    background-color: violet; 
+}
+
+.glimpse {
+    border: 2px solid greenyellow;
+    margin-top: -21vw;
+    background-image: url(/glimpse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+    top: 8vh;
+  }
+  
+  .glimpse.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+.glimpse p{
+    text-transform: uppercase;
+    text-decoration: underline;
+    top: 7vw;
+    right:8vw;
+    font-weight: 900;
+    font-size: 32px;
+    position: absolute;
+    color: aliceblue;
+}
+
+.glimpse iframe{
+    height: 580px;
+    width: 100%;
+    justify-items: center;
+    object-fit: cover;
+}
+
+.glimpse a{
+     position: absolute;
+     top: 23vw;
+     left: 64vw;
+}
+
+.glimpse button{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #fdfd1e;
+    border-radius: 10px;
+}
+.review{
+    margin: 0;
+    position: relative;
+    top: 8vh;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 3s all ease;
+}
+
+.review.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .review iframe{
+    width: 100%;
+    height: 680px;
+  }
+
+  .footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px ;
+    background-color: #5e625f;
+    
+}
+
+.footer img{
+    height: 80px;
+    width: auto;
+    padding-left: 30px;
+}
+
+.footer p{
+    padding-left: 160px;
+    color: #ffff00;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3vw;
+}
+
+.footer li {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#fdfd1e;
+}
+
+/* Style for desktop - home page */
+
+
+
+
+
+
+
+/* Style for mobile - home page */
+@media only screen and (max-width: 600px) {    
+    body{
+        max-height: 561.5vw;
+        max-width: 100%;
+    }
+    
+    
+    .cookie-popup p{
+            font-size: 1.5vh;
+    }
+    
+    .cookie-popup button{
+        top: 0vh;
+        left: 8vh;
+        font-size: 1.5vh;
+    }
+    
+    .header{
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .container{
+        overflow: hidden;
+    }
+
+    .container img{
+        height: 8vh;
+        margin-top: 2vh;
+    }
+    
+    .container h4{
+        margin-top: 3vh;
+        font-size: 2vh;
+    }
+    
+    .vl {
+        display: none;
+      }
+    
+    .container nav{
+        display: flexbox;
+        position: relative;
+        left: -3vw;
+    }
+    
+    .container ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -15vh;
+    }
+    
+    
+    .container li a{
+        font-size: 1.5vh;
+    }
+    
+    .intro{
+        position: relative;
+        top: 12vh;
+    }
+    
+    .intro img{
+        position: absolute;
+        height: 75vw;
+        width: 120vw;
+        z-index:2;
+        opacity: 9;
+        top: 27.6vw;
+        left: -8%;
+    
+    }
+    
+    .line{
+       display: none;
+    }
+    
+    #mobile{
+        max-width:100%;
+        opacity: 0.4;
+        display: inline-block;
+        object-fit: cover;
+        margin: 0%;
+        overflow: hidden;
+    }
+
+    .intro video{
+         display:none;
+    }
+    
+    .intro p{
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        top: 45vh;
+        left:2vh;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 900;
+        color: #298706;
+    }
+    
+    .introx{
+        height: 250vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .introx h3{
+        position: absolute;
+        top:1vh;
+        left: 16vw;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .introx img{
+         height: 160vw;
+         opacity: 0.2;
+         
+    }
+
+    .introx p{
+        text-align: justify;
+        position: absolute;
+        width: 80vw;
+        top:12vw;
+        left: 9vw;
+        font-size: 4.3vw;
+    }
+    
+    .details{
+        top: 128vw;
+        opacity: 0;
+        transition: 0.5s all ease;
+      }
+    
+    .details div{
+        margin: 0 6%;
+    }
+    .details svg{
+        position: relative;
+        bottom: -6vw;
+        left: -5vw;
+        width: 7vw;
+    }
+    .details p{
+        font-size: 3.2vw;
+    }
+    
+    .carousel {    
+        width: 50%; 
+        height: 50vw;      
+    } 
+    
+    .glimpse {
+        top: -42vw;
+        max-width: 100%;
+      }
+    
+    .glimpse p{
+        right:1vw;
+        font-size: 3vw;
+    }
+    
+    .glimpse iframe{
+        height: 580px;
+        width: 50vw;
+        justify-items: center;
+        object-fit: cover;
+    }
+    
+    .glimpse a{
+         top: 15vw;
+         left: 60vw;
+    }
+    
+    .glimpse button{
+        font-size: 3vw;
+    }
+
+    .review{
+        top: -42vw;
+    }
+    
+      .footer{
+        top: -43vw;
+    }
+    
+    .footer img{
+        height: 9vw;
+        width: auto;
+        padding-left: 30px;
+    }
+    
+    .footer p{
+        padding-left: 18vw;
+        color: #ffff00;
+        font-size: 2vw;
+    }
+    
+    .footer ul{
+        flex-direction: column;
+        margin-right: 1vw;
+    }
+    
+    .footer li {
+        padding:1vw;
+        font-size: 2vw;
+    }
+    
+    .footer a{
+        text-decoration: none;
+        color:#fdfd1e;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {    
+    body{
+        max-height: 561.5vw;
+    }
+    
+    .cookie-popup button{
+        top: 0vh;
+        left: 0vh;
+        font-size: 1.5vh;
+    }
+    
+    .intro img{
+        height: 55vw;
+        width: 90vw;
+        top: 3vw;
+        left:2vw;
+    }
+    
+    .intro video{
+         max-width:150vh;
+         overflow-x: hidden;
+    }
+    
+    .intro p{
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        top: 55vw;
+        left:12vh;
+        text-transform: uppercase;
+        font-size: 3vw;
+        font-weight: 900;
+        color: #298706;
+    }
+    
+    .introx{
+        height: 250vw;
+    }
+    
+    .introx h3{
+        position: absolute;
+        top:1vh;
+        left: 16vw;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .introx img{
+         height: 160vw;
+         opacity: 0.2;
+    }
+
+    .introx p{
+        text-align: justify;
+        position: absolute;
+        width: 80vw;
+        top:12vw;
+        left: 9vw;
+        font-size: 4.3vw;
+    }
+    
+    .details{
+        top: 90vw;
+        opacity: 0;
+        transition: 0.5s all ease;
+      }
+  }
+/* Style for mobile - home page */
+
+
+
+
+
+
+
+
+
+/* Style for desktop - gallery page */
+.gallery{
+   position: relative;
+   top: 14.0vh;
+   margin-bottom: 59.8vh;
+   height: 100%;
+   display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        
+}
+
+.a {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px; 
+  }
+
+
+.a img{
+
+        width: 31.2vw;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 0.5s all ease;
+      }
+      .a img.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+.a iframe {
+    margin-top: 0px;
+        vertical-align: middle;
+        height: 16%;
+        width: 66.5%;
+}
+/* Style for desktop - gallery page */
+
+
+
+
+
+
+
+
+
+
+
+/* Style for desktop - booking page */
+.booking{
+    position: relative;
+    display: block;
+}
+
+.partner{
+    position: relative;
+    display: inline-block;
+    top: 12vh;
+    padding-bottom: 20vh;
+    background-image: url(/booking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partner h3{
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.partner p{
+    text-align: justify;
+    padding: 0 52px;
+    text-transform: capitalize;
+}
+
+.partner h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.partner svg{
+    margin: 5% 50% -3%;
+}
+
+.onpart { 
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vh;
+    justify-content: center;
+}
+
+.onpart img{
+    width: 50px;
+}
+
+.onpart button{
+    position: relative;
+    top: -2.5vh;
+    left: 2vh;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.onpart p{
+    font-size: 13px;
+    position: relative;
+    top:-3.2vh;
+    left: 2vh;
+}
+
+.plana{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plana svg{
+    position: relative;
+    margin: 5vh;
+}
+
+.plana button{
+    position: relative;
+    top: 6vh;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.op{
+    position: relative;
+}
+
+.op h3{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.op img{
+    width: 25vh;
+    margin: 0 85vh;
+    margin-top: -8vh;
+}
+
+.op p{
+    color: aqua;
+    margin-left: 83vh;
+    margin-top: -7vh;
+}
+/* Style for desktop - booking page */
+
+
+
+
+
+
+
+
+
+
+
+
+/*Style for mobile - booking page */
+@media only screen and (max-width: 600px) { 
+    
+    .partner{
+        max-width: 100%;
+        top: 29vw;
+        padding-bottom: 20vh;
+        background-image: url(/booking.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .partner h3{
+        font-size: 3vw;
+        margin-top: 7vw;
+    }
+    
+    .partner p{
+      font-size: 2.8vw;
+    }
+    
+    .partner h2{
+        font-size: 3vw;
+    }
+    
+    .partner svg{
+        width: 3vw;
+    }
+    
+    .onpart { 
+        display: flex;
+        flex-direction: row;
+        margin-left: 5vw;
+        justify-content: center;
+    }
+    
+    .onpart img{
+        width: 7vw;
+        margin-left: 6vw;
+    }
+    
+    .onpart button{
+        top: -3vw;
+        font-size: 3vw;
+        margin-left: -6vw;
+    }
+    
+    .onpart p{
+        font-size: 2.5vw;
+        width: 28vw;
+        top:-4vw;
+        left: -2vw;
+    }
+
+    .plana svg{
+        margin: 5vw;
+    }
+    
+    .plana button{
+        top: 7.5vw;
+        left: -4vw;
+        font-size: 2vw;
+    }
+    
+    .op{
+        position: relative;
+        top: -32vw;
+    }
+    
+    .op h3{
+        font-size: 4vw;
+    }
+    
+    .op img{
+        width: 25vw;
+        margin: 0vw 35vw;
+    }
+    
+    .op p{
+        color: aqua;
+        margin: -8vw 0 0 23vw;
+    }
+}
+/*Style for mobile - booking page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for desktop - contacts page */
+.contacts{
+    position: relative;
+    display: block;
+}
+
+.conlist{
+    position: relative;
+    display: inline-block;
+    top: 12vh;
+    padding-bottom: 20vh;
+    background-image: url(/contacts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conlist h3{
+    color: rgb(244, 255, 31);
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.conlist p{
+    color: #fdfd1e;
+    text-align: left;
+    font-size: 20px;
+    padding: 0 32vh;
+}
+
+.congi button{
+    margin: 0 50%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.congi p {
+    color: aliceblue;
+}
+
+.convi{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+
+  }
+  
+  .convi.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+/* Style for desktop - contacts page */
+
+
+
+
+
+
+
+
+
+
+
+
+/*Style for mobile - contacts page */
+@media only screen and (max-width: 600px) {
+    .contacts{
+        overflow: hidden;
+    }
+    
+    .conlist{
+        position: relative;
+        display: inline-block;
+        top: 12vh;
+        padding-bottom: 20vh;
+        background-image: url(/contacts.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .conlist h3{
+        font-size: 5vw;
+    }
+    
+    .conlist p{
+        font-size: 3.5vw;
+        padding: 0 11vw;
+        width:80vw;
+        text-align: justify;
+    }
+    
+    .congi button{
+        margin-left: 10vw;
+        padding: 1vw;
+        text-transform: uppercase;
+        font-size: 3.5vw;
+    }
+}
+/*Style for mobile - contacts page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for desktop - about page */
+.about{
+    position: relative;
+    display: block;
+}
+
+.aboutus{
+    position: relative;
+    display: inline-block;
+    top: 12vh;
+    padding-bottom: 20vh;
+    background-image: url(/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.aboutus h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    color: #ffff00;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.aboutus p{
+    text-align: justify;
+    color: #74e64b;
+    font-size: 24px;
+    margin: 0 25vh;
+}
+
+.aboutus img{
+    position: relative;
+    top: -38vh;
+    left: 130vh;
+    height: 850px;
+
+}
+/* Style for desktop - about page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Style for mobile - about page */
+@media only screen and (max-width: 600px) {
+    .about{
+        overflow: hidden;
+        margin-bottom: 12vw;
+    }
+    
+    .aboutus{
+        width: 100%;
+        height: 339vw;
+    }
+    
+    .aboutus h3{
+        margin-top: 25vw;
+        font-size: 5vw;
+    }
+    
+    .aboutus p{
+        font-size: 3.5vw;
+        width: 80vw;
+        margin-left: 11vw;
+    }
+    
+    .aboutus img{
+        position: relative;
+        top: -27vw;
+        left: 48vw;
+        height: 80vw;    
+    }
+}
+/*Style for mobile - about page */
