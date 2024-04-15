@@ -128,10 +128,11 @@ body {
 }
 
 .intro video{
+    height: 1080px;
      max-width:100%;
     opacity: 0.4;
     display: inline-block;
-    margin: 0%;
+    margin: -10% 0 0 0;
     overflow: hidden;
 }
 
